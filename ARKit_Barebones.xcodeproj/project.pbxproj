@@ -9,18 +9,24 @@
 /* Begin PBXBuildFile section */
 		26347527289A29DC00D30CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26347526289A29DC00D30CDC /* AppDelegate.swift */; };
 		26347529289A29DC00D30CDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26347528289A29DC00D30CDC /* ContentView.swift */; };
-		2634752B289A29DC00D30CDC /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2634752A289A29DC00D30CDC /* Experience.rcproject */; };
 		2634752D289A29DE00D30CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2634752C289A29DE00D30CDC /* Assets.xcassets */; };
 		26347530289A29DE00D30CDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2634752F289A29DE00D30CDC /* Preview Assets.xcassets */; };
+		2634753B289A2CBD00D30CDC /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 26347537289A2CBB00D30CDC /* teapot.usdz */; };
+		2634753C289A2CBD00D30CDC /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 26347538289A2CBC00D30CDC /* toy_robot_vintage.usdz */; };
+		2634753D289A2CBD00D30CDC /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 26347539289A2CBC00D30CDC /* toy_drummer.usdz */; };
+		2634753E289A2CBD00D30CDC /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2634753A289A2CBD00D30CDC /* toy_biplane.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26347523289A29DC00D30CDC /* ARKit_Barebones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKit_Barebones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26347526289A29DC00D30CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26347528289A29DC00D30CDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2634752A289A29DC00D30CDC /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		2634752C289A29DE00D30CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2634752F289A29DE00D30CDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26347537289A2CBB00D30CDC /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		26347538289A2CBC00D30CDC /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		26347539289A2CBC00D30CDC /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		2634753A289A2CBD00D30CDC /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +59,9 @@
 		26347525289A29DC00D30CDC /* ARKit_Barebones */ = {
 			isa = PBXGroup;
 			children = (
+				26347536289A2C2E00D30CDC /* Models */,
 				26347526289A29DC00D30CDC /* AppDelegate.swift */,
 				26347528289A29DC00D30CDC /* ContentView.swift */,
-				2634752A289A29DC00D30CDC /* Experience.rcproject */,
 				2634752C289A29DE00D30CDC /* Assets.xcassets */,
 				2634752E289A29DE00D30CDC /* Preview Content */,
 			);
@@ -68,6 +74,17 @@
 				2634752F289A29DE00D30CDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26347536289A2C2E00D30CDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26347537289A2CBB00D30CDC /* teapot.usdz */,
+				2634753A289A2CBD00D30CDC /* toy_biplane.usdz */,
+				26347539289A2CBC00D30CDC /* toy_drummer.usdz */,
+				26347538289A2CBC00D30CDC /* toy_robot_vintage.usdz */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2634753E289A2CBD00D30CDC /* toy_biplane.usdz in Resources */,
+				2634753D289A2CBD00D30CDC /* toy_drummer.usdz in Resources */,
+				2634753C289A2CBD00D30CDC /* toy_robot_vintage.usdz in Resources */,
+				2634753B289A2CBD00D30CDC /* teapot.usdz in Resources */,
 				26347530289A29DE00D30CDC /* Preview Assets.xcassets in Resources */,
 				2634752D289A29DE00D30CDC /* Assets.xcassets in Resources */,
 			);
@@ -142,7 +163,6 @@
 			files = (
 				26347529289A29DC00D30CDC /* ContentView.swift in Sources */,
 				26347527289A29DC00D30CDC /* AppDelegate.swift in Sources */,
-				2634752B289A29DC00D30CDC /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
