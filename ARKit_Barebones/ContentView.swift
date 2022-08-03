@@ -9,6 +9,7 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    @State private var isPlacementEnabled = false
     
     // 파일 이름에서 .usdz 확장자 제거하여 모델 이름 얻기
     private var models: [String] = {
@@ -26,7 +27,13 @@ struct ContentView : View {
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer()
-            ModelPickerView(models: self.models)
+            
+            if self.isPlacementEnabled {
+                PlacementButtonsView()
+            } else {
+                ModelPickerView(models: self.models)
+            }
+            
         }
     }
     
