@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ModelPickerView: View {
     @Binding var isPlacementEnabled: Bool
+    @Binding var selectedModel: String?
     
     var models: [String]
     
@@ -18,6 +19,7 @@ struct ModelPickerView: View {
             HStack(spacing: 20) {
                 ForEach(0..<self.models.count) { index in
                     Button {
+                        self.selectedModel = self.models[index]
                         self.isPlacementEnabled = true
                     } label: {
                         Image(uiImage: UIImage(named: self.models[index])!)

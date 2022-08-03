@@ -10,6 +10,8 @@ import RealityKit
 
 struct ContentView : View {
     @State private var isPlacementEnabled = false
+    @State private var selectedModel: String?
+    @State private var modelConfirmedForPlacement: String?
     
     // 파일 이름에서 .usdz 확장자 제거하여 모델 이름 얻기
     private var models: [String] = {
@@ -29,9 +31,9 @@ struct ContentView : View {
             ARViewContainer()
             
             if self.isPlacementEnabled {
-                PlacementButtonsView(isPlacementEnabled: $isPlacementEnabled)
+                PlacementButtonsView(isPlacementEnabled: self.$isPlacementEnabled, selectedModel: self.$selectedModel, modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
             } else {
-                ModelPickerView(isPlacementEnabled: $isPlacementEnabled, models: self.models)
+                ModelPickerView(isPlacementEnabled: self.$isPlacementEnabled, selectedModel: self.$selectedModel, models: self.models)
             }
             
         }
