@@ -9,7 +9,19 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
-    var models: [String] = ["teapot", "toy_biplane", "toy_drummer", "toy_robot_vintage"]
+    
+    // 파일 이름에서 .usdz 확장자 제거하여 모델 이름 얻기
+    private var models: [String] = {
+        guard let path = Bundle.main.resourcePath, let files = try? FileManager.default.contentsOfDirectory(atPath: path) else {
+            return []
+        }
+        var models: [String] = []
+        for fileName in files where fileName.hasSuffix("usdz") {
+            let modelName = fileName.replacingOccurrences(of: ".usdz", with: "")
+            models.append(modelName)
+        }
+        return models
+    }()
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -17,6 +29,7 @@ struct ContentView : View {
             ModelPickerView(models: self.models)
         }
     }
+    
 }
 
 struct ARViewContainer: UIViewRepresentable {
