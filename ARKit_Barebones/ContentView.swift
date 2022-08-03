@@ -9,29 +9,23 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    var models: [String] = ["teapot", "toy_biplane", "toy_drummer", "toy_robot_vintage"]
+    
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack(alignment: .bottom) {
+            ARViewContainer()
+            ModelPickerView(models: self.models)
+        }
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
-        
         let arView = ARView(frame: .zero)
-        
         return arView
-        
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {}
     
 }
-
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-#endif
