@@ -29,9 +29,9 @@ struct ContentView : View {
             ARViewContainer()
             
             if self.isPlacementEnabled {
-                PlacementButtonsView()
+                PlacementButtonsView(isPlacementEnabled: $isPlacementEnabled)
             } else {
-                ModelPickerView(models: self.models)
+                ModelPickerView(isPlacementEnabled: $isPlacementEnabled, models: self.models)
             }
             
         }

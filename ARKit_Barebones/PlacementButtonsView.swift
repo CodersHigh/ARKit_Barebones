@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct PlacementButtonsView: View {
+    @Binding var isPlacementEnabled: Bool
+    
     var body: some View {
         
         HStack {
             // Cancel 버튼
             Button {
-                print("model placement canceled.")
+                self.isPlacementEnabled = false
             } label: {
                 Image(systemName: "xmark")
                     .frame(width: 60, height: 60)
@@ -24,7 +26,7 @@ struct PlacementButtonsView: View {
             }
             // Confirm 버튼
             Button {
-                print("model placement confirmed.")
+                self.isPlacementEnabled = false
             } label: {
                 Image(systemName: "checkmark")
                     .frame(width: 60, height: 60)
@@ -36,4 +38,6 @@ struct PlacementButtonsView: View {
         }
         
     }
+    
+    
 }
