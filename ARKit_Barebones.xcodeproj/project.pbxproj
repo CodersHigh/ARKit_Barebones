@@ -17,6 +17,7 @@
 		2634753E289A2CBD00D30CDC /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2634753A289A2CBD00D30CDC /* toy_biplane.usdz */; };
 		26347540289A32B400D30CDC /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634753F289A32B400D30CDC /* ModelPickerView.swift */; };
 		26347542289A37C000D30CDC /* PlacementButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26347541289A37C000D30CDC /* PlacementButtonsView.swift */; };
+		26347545289A456500D30CDC /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26347543289A3FC700D30CDC /* ARViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2634753A289A2CBD00D30CDC /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		2634753F289A32B400D30CDC /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
 		26347541289A37C000D30CDC /* PlacementButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
+		26347543289A3FC700D30CDC /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				26347528289A29DC00D30CDC /* ContentView.swift */,
 				2634753F289A32B400D30CDC /* ModelPickerView.swift */,
 				26347541289A37C000D30CDC /* PlacementButtonsView.swift */,
+				26347543289A3FC700D30CDC /* ARViewContainer.swift */,
 				2634752C289A29DE00D30CDC /* Assets.xcassets */,
 				2634752E289A29DE00D30CDC /* Preview Content */,
 			);
@@ -171,6 +174,7 @@
 				26347529289A29DC00D30CDC /* ContentView.swift in Sources */,
 				26347527289A29DC00D30CDC /* AppDelegate.swift in Sources */,
 				26347540289A32B400D30CDC /* ModelPickerView.swift in Sources */,
+				26347545289A456500D30CDC /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

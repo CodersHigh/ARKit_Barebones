@@ -28,8 +28,8 @@ struct PlacementButtonsView: View {
             }
             // Confirm 버튼
             Button {
-                self.resetPlacement()
                 self.modelConfirmedForPlacement = self.selectedModel
+                self.resetPlacement()
             } label: {
                 Image(systemName: "checkmark")
                     .frame(width: 60, height: 60)

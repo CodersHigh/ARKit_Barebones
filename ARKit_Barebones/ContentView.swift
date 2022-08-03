@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import RealityKit
 
 struct ContentView : View {
     @State private var isPlacementEnabled = false
@@ -28,7 +27,7 @@ struct ContentView : View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            ARViewContainer()
+            ARViewContainer(modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
             
             if self.isPlacementEnabled {
                 PlacementButtonsView(isPlacementEnabled: self.$isPlacementEnabled, selectedModel: self.$selectedModel, modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
@@ -38,16 +37,5 @@ struct ContentView : View {
             
         }
     }
-    
-}
-
-struct ARViewContainer: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> ARView {
-        let arView = ARView(frame: .zero)
-        return arView
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
     
 }
