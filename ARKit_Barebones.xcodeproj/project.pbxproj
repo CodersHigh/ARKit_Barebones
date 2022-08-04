@@ -21,11 +21,7 @@
 		26B26CDE289B496B0058A274 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B26CDD289B496B0058A274 /* Model.swift */; };
 		26B26CE7289B57AF0058A274 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 26B26CE6289B57AF0058A274 /* FocusEntity */; };
 		26B26CE9289B57D20058A274 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B26CE8289B57D20058A274 /* CustomARView.swift */; };
-		26B26CEF289B625A0058A274 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 26B26CEA289B62590058A274 /* gramophone.usdz */; };
-		26B26CF0289B625A0058A274 /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 26B26CEB289B62590058A274 /* flower_tulip.usdz */; };
-		26B26CF1289B625A0058A274 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 26B26CEC289B62590058A274 /* tv_retro.usdz */; };
 		26B26CF2289B625A0058A274 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 26B26CED289B62590058A274 /* cup_saucer_set.usdz */; };
-		26B26CF3289B625A0058A274 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 26B26CEE289B625A0058A274 /* fender_stratocaster.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,11 +39,7 @@
 		26347543289A3FC700D30CDC /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		26B26CDD289B496B0058A274 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		26B26CE8289B57D20058A274 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
-		26B26CEA289B62590058A274 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
-		26B26CEB289B62590058A274 /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
-		26B26CEC289B62590058A274 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
 		26B26CED289B62590058A274 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
-		26B26CEE289B625A0058A274 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				26B26CED289B62590058A274 /* cup_saucer_set.usdz */,
-				26B26CEE289B625A0058A274 /* fender_stratocaster.usdz */,
-				26B26CEB289B62590058A274 /* flower_tulip.usdz */,
-				26B26CEA289B62590058A274 /* gramophone.usdz */,
-				26B26CEC289B62590058A274 /* tv_retro.usdz */,
 				26347537289A2CBB00D30CDC /* teapot.usdz */,
 				2634753A289A2CBD00D30CDC /* toy_biplane.usdz */,
 				26347539289A2CBC00D30CDC /* toy_drummer.usdz */,
@@ -199,16 +187,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B26CF3289B625A0058A274 /* fender_stratocaster.usdz in Resources */,
-				26B26CF1289B625A0058A274 /* tv_retro.usdz in Resources */,
 				2634753E289A2CBD00D30CDC /* toy_biplane.usdz in Resources */,
 				26B26CF2289B625A0058A274 /* cup_saucer_set.usdz in Resources */,
-				26B26CF0289B625A0058A274 /* flower_tulip.usdz in Resources */,
 				2634753D289A2CBD00D30CDC /* toy_drummer.usdz in Resources */,
 				2634753C289A2CBD00D30CDC /* toy_robot_vintage.usdz in Resources */,
 				2634753B289A2CBD00D30CDC /* teapot.usdz in Resources */,
 				26347530289A29DE00D30CDC /* Preview Assets.xcassets in Resources */,
-				26B26CEF289B625A0058A274 /* gramophone.usdz in Resources */,
 				2634752D289A29DE00D30CDC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
