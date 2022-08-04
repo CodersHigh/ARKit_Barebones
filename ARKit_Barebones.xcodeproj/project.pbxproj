@@ -18,6 +18,7 @@
 		26347540289A32B400D30CDC /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634753F289A32B400D30CDC /* ModelPickerView.swift */; };
 		26347542289A37C000D30CDC /* PlacementButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26347541289A37C000D30CDC /* PlacementButtonsView.swift */; };
 		26347545289A456500D30CDC /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26347543289A3FC700D30CDC /* ARViewContainer.swift */; };
+		26B26CDE289B496B0058A274 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B26CDD289B496B0058A274 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		2634753F289A32B400D30CDC /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
 		26347541289A37C000D30CDC /* PlacementButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
 		26347543289A3FC700D30CDC /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		26B26CDD289B496B0058A274 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +67,10 @@
 		26347525289A29DC00D30CDC /* ARKit_Barebones */ = {
 			isa = PBXGroup;
 			children = (
-				26347536289A2C2E00D30CDC /* Models */,
 				26347526289A29DC00D30CDC /* AppDelegate.swift */,
-				26347528289A29DC00D30CDC /* ContentView.swift */,
-				2634753F289A32B400D30CDC /* ModelPickerView.swift */,
-				26347541289A37C000D30CDC /* PlacementButtonsView.swift */,
-				26347543289A3FC700D30CDC /* ARViewContainer.swift */,
+				26B26CDF289B4E690058A274 /* Model  */,
+				26B26CDC289B493A0058A274 /* View */,
+				26347536289A2C2E00D30CDC /* Models */,
 				2634752C289A29DE00D30CDC /* Assets.xcassets */,
 				2634752E289A29DE00D30CDC /* Preview Content */,
 			);
@@ -94,6 +94,25 @@
 				26347538289A2CBC00D30CDC /* toy_robot_vintage.usdz */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		26B26CDC289B493A0058A274 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26347528289A29DC00D30CDC /* ContentView.swift */,
+				2634753F289A32B400D30CDC /* ModelPickerView.swift */,
+				26347541289A37C000D30CDC /* PlacementButtonsView.swift */,
+				26347543289A3FC700D30CDC /* ARViewContainer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26B26CDF289B4E690058A274 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				26B26CDD289B496B0058A274 /* Model.swift */,
+			);
+			path = "Model ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +192,7 @@
 				26347542289A37C000D30CDC /* PlacementButtonsView.swift in Sources */,
 				26347529289A29DC00D30CDC /* ContentView.swift in Sources */,
 				26347527289A29DC00D30CDC /* AppDelegate.swift in Sources */,
+				26B26CDE289B496B0058A274 /* Model.swift in Sources */,
 				26347540289A32B400D30CDC /* ModelPickerView.swift in Sources */,
 				26347545289A456500D30CDC /* ARViewContainer.swift in Sources */,
 			);

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ModelPickerView: View {
     @Binding var isPlacementEnabled: Bool
-    @Binding var selectedModel: String?
+    @Binding var selectedModel: Model?
     
-    var models: [String]
+    var models: [Model]
     
     var body: some View {
         
@@ -22,7 +22,7 @@ struct ModelPickerView: View {
                         self.selectedModel = self.models[index]
                         self.isPlacementEnabled = true
                     } label: {
-                        Image(uiImage: UIImage(named: self.models[index])!)
+                        Image(uiImage: self.models[index].image)
                             .resizable()
                             .frame(height: 80)
                             .aspectRatio(1/1, contentMode: .fit)

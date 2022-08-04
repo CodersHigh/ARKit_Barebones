@@ -9,18 +9,19 @@ import SwiftUI
 
 struct ContentView : View {
     @State private var isPlacementEnabled = false
-    @State private var selectedModel: String?
-    @State private var modelConfirmedForPlacement: String?
+    @State private var selectedModel: Model?
+    @State private var modelConfirmedForPlacement: Model?
     
     // 파일 이름에서 .usdz 확장자 제거하여 모델 이름 얻기
-    private var models: [String] = {
+    private var models: [Model] = {
         guard let path = Bundle.main.resourcePath, let files = try? FileManager.default.contentsOfDirectory(atPath: path) else {
             return []
         }
-        var models: [String] = []
+        var models: [Model] = []
         for fileName in files where fileName.hasSuffix("usdz") {
             let modelName = fileName.replacingOccurrences(of: ".usdz", with: "")
-            models.append(modelName)
+            let model = Model(modelName: modelName)
+            models.append(model)
         }
         return models
     }()

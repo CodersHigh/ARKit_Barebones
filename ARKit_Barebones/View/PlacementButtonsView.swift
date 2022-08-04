@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PlacementButtonsView: View {
     @Binding var isPlacementEnabled: Bool
-    @Binding var selectedModel: String?
-    @Binding var modelConfirmedForPlacement: String?
+    @Binding var selectedModel: Model?
+    @Binding var modelConfirmedForPlacement: Model?
     
     var body: some View {
         
@@ -30,7 +30,7 @@ struct PlacementButtonsView: View {
             Button {
                 self.modelConfirmedForPlacement = self.selectedModel
                 self.resetPlacement()
-            } label: {
+            } label: { 
                 Image(systemName: "checkmark")
                     .frame(width: 60, height: 60)
                     .font(.title)
