@@ -32,7 +32,7 @@ struct ARViewContainer: UIViewRepresentable {
             
             if let modelEntity = model.modelEntity {
                 let anchorEntity = AnchorEntity(plane: .any)
-                anchorEntity.addChild(modelEntity)
+                anchorEntity.addChild(modelEntity.clone(recursive: true))
                 uiView.scene.addAnchor(anchorEntity)
             } else {
                 print("Unable to load modelEntity for \(model.modelName)")
