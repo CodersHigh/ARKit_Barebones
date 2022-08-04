@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView : View {
-    @State private var isPlacementEnabled = false
+    @State private var placementMode = false
     @State private var selectedModel: Model?
     @State private var modelConfirmedForPlacement: Model?
     
@@ -30,10 +30,11 @@ struct ContentView : View {
         ZStack(alignment: .bottom) {
             ARViewContainer(modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
             
-            if self.isPlacementEnabled {
-                PlacementButtonsView(isPlacementEnabled: self.$isPlacementEnabled, selectedModel: self.$selectedModel, modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
+            // 배치 모드라면 PlacementButtonsView / 아니라면 ModelPickerView 표시
+            if self.placementMode {
+                PlacementButtonsView(placementMode: self.$placementMode, selectedModel: self.$selectedModel, modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
             } else {
-                ModelPickerView(isPlacementEnabled: self.$isPlacementEnabled, selectedModel: self.$selectedModel, models: self.models)
+                ModelPickerView(placementMode: self.$placementMode, selectedModel: self.$selectedModel, models: self.models)
             }
             
         }

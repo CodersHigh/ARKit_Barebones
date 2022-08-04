@@ -13,24 +13,14 @@ struct ARViewContainer: UIViewRepresentable {
     @Binding var modelConfirmedForPlacement: Model?
     
     func makeUIView(context: Context) -> ARView {
-        let arView = ARView(frame: .zero)
-        
-        let config = ARWorldTrackingConfiguration() // 장치의 위치를 추적
-        config.planeDetection = [.horizontal, .vertical] // 수평과 수직, 둘 다에서 평평한 표면을 감지
-        config.environmentTexturing = .automatic // 환경 텍스처 생성?
-        
-        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
-            config.sceneReconstruction = .mesh
-        }
-        arView.session.run(config)
-        
+        let arView = CustomARView(frame: .zero) // focusSquare를 생성하기 위한 CustomARView
         return arView
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
         if let model = self.modelConfirmedForPlacement {
-            
             if let modelEntity = model.modelEntity {
+                // 모델을 화면에 배치
                 let anchorEntity = AnchorEntity(plane: .any)
                 anchorEntity.addChild(modelEntity.clone(recursive: true))
                 uiView.scene.addAnchor(anchorEntity)

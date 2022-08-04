@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ModelPickerView: View {
-    @Binding var isPlacementEnabled: Bool
+    @Binding var placementMode: Bool
     @Binding var selectedModel: Model?
     
     var models: [Model]
@@ -20,7 +20,7 @@ struct ModelPickerView: View {
                 ForEach(0..<self.models.count) { index in
                     Button {
                         self.selectedModel = self.models[index]
-                        self.isPlacementEnabled = true
+                        self.placementMode = true
                     } label: {
                         Image(uiImage: self.models[index].image)
                             .resizable()
